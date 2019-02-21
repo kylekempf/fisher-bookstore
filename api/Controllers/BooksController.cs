@@ -106,7 +106,7 @@ namespace Fisher.Bookstore.Api.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var book = db.Books.FirstOrDefault9b => b.Id == id);
+            var book = db.Books.FirstOrDefault(b => b.Id == id);
 
             if (book == null)
             {

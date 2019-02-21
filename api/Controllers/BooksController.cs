@@ -61,7 +61,7 @@ namespace Fisher.Bookstore.Api.Controllers
             }
 
             // return the Book inside HTTP 200 OK
-            return Ok(Book);
+            return Ok(book);
         }
 
         [HttpPost]
@@ -72,10 +72,10 @@ namespace Fisher.Bookstore.Api.Controllers
                 return BadRequest();
             }
 
-            db.Books.Add(Book);
+            db.Books.Add(book);
             db.SaveChanges();
 
-            return CreatedAtRoute("GetBook", new { id = book.ID }, book);
+            return CreatedAtRoute("GetBook", new { id = book.Id }, book);
         }
 
         [HttpPut("{id}")]

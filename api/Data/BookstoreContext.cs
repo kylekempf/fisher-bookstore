@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Fisher.Bookstore.Models;
 
 namespace Fisher.Bookstore.Api.Data
 {

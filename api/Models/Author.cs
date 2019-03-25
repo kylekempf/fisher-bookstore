@@ -1,4 +1,6 @@
+
 using System;
+using System.Collections.Generic;
 
 namespace Fisher.Bookstore.Models
 {
@@ -10,3 +12,4 @@ namespace Fisher.Bookstore.Models
         public List<Book> Titles { get; set; }
     }
 }
+
